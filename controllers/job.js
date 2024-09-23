@@ -68,7 +68,6 @@ exports.calcurateCostFor10Days = async (req, res) => {
       });
   
       const totalCost = costAll.reduce((acc, current) => acc + current, 0); 
-      console.log('totalCost', totalCost);
   
       return res.json({
         status: "200",
